@@ -1,14 +1,6 @@
-# Remove the existing file
-Remove-Item -Path "netlify.toml"
-
-# Create a new file with simpler content
-$content = @'
 [build]
 publish = "public"
 command = "hugo"
 
 [build.environment]
 HUGO_VERSION = "0.121.2"
-'@
-
-Set-Content -Path "netlify.toml" -Value $content -Encoding utf8
