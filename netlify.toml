@@ -1,19 +1,14 @@
-# Create the file
+# Remove the existing file
+Remove-Item -Path "netlify.toml"
+
+# Create a new file with simpler content
 $content = @'
 [build]
-  publish = "public"
-  command = "hugo --gc --minify"
+publish = "public"
+command = "hugo"
 
 [build.environment]
-  HUGO_VERSION = "0.121.2"
-  HUGO_ENV = "production"
-  HUGO_ENABLEGITINFO = "true"
-
-[context.deploy-preview]
-  command = "hugo --gc --minify --buildFuture -b $DEPLOY_PRIME_URL"
-
-[context.branch-deploy]
-  command = "hugo --gc --minify -b $DEPLOY_PRIME_URL"
+HUGO_VERSION = "0.121.2"
 '@
 
-Set-Content -Path "netlify.toml" -Value $content
+Set-Content -Path "netlify.toml" -Value $content -Encoding utf8
