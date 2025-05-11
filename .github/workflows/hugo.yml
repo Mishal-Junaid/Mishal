@@ -1,23 +1,15 @@
-# Create directory structure
-mkdir -p .github/workflows
-
-# Create the workflow file
-@'
-name: Deploy Hugo site to Pages
+name: Deploy Hugo site to GitHub Pages
 
 on:
   push:
-    branches: ["main"]
+    branches:
+      - main
   workflow_dispatch:
 
 permissions:
   contents: read
   pages: write
   id-token: write
-
-concurrency:
-  group: "pages"
-  cancel-in-progress: true
 
 jobs:
   build:
@@ -28,12 +20,10 @@ jobs:
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
         with:
-          hugo-version: 'latest'
+          hugo-version: '0.121.0'
           extended: true
       - name: Build
         run: hugo --minify
-      - name: Setup Pages
-        uses: actions/configure-pages@v4
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v2
         with:
@@ -49,9 +39,3 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v3
-'@ | Out-File -FilePath ".github/workflows/hugo.yml" -Encoding utf8
-
-# Commit and push
-git add .github/workflows/hugo.yml
-git commit -m "Fix GitHub Actions workflow file with correct syntax and updated actions"
-git push origin main
