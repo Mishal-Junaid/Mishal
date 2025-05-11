@@ -1,5 +1,8 @@
-# Create/update the workflow file
-$content = @'
+# Create the directory if it doesn't exist
+mkdir -p .github/workflows
+
+# Write the content with proper line breaks
+$content = @"
 name: Deploy Hugo site to Pages
 
 on:
@@ -37,7 +40,7 @@ jobs:
   deploy:
     environment:
       name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
+      url: `${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     needs: build
     steps:
@@ -49,6 +52,7 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v2
-'@
+"@
 
-Set-Content -Path .github/workflows/hugo.yml -Value $content
+# Write to file using UTF-8 encoding without BOM
+[System.IO.File]::WriteAllText((Resolve-Path ".github/workflows/hugo.yml"), $content)
