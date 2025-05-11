@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Projects on Hassan Mish&#39;al Junaid</title>
+    <link>http://localhost:1313/</link>
+    <description>Recent content in Projects on Hassan Mish&#39;al Junaid</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 11 May 2025 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>About Me</title>
+      <link>http://localhost:1313/about/</link>
+      <pubDate>Sun, 11 May 2025 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/about/</guid>
+      
+      <description>&lt;p&gt;Hello, I&amp;rsquo;m &lt;strong&gt;Hassan Mishal Junaid&lt;/strong&gt; 👋&lt;/p&gt;
+&lt;p&gt;I am a &lt;strong&gt;Product Development Manager&lt;/strong&gt; with &lt;strong&gt;6+ years&lt;/strong&gt; of experience specializing in &lt;strong&gt;Digital Product Strategy, Content Portfolio Management, and AI Implementation&lt;/strong&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;professional-background&#34;&gt;Professional Background&lt;/h2&gt;
+&lt;p&gt;I&amp;rsquo;ve worked with various organizations including &lt;strong&gt;Ooredoo Maldives&lt;/strong&gt; and &lt;strong&gt;Ministry of Fisheries, Marine Resources &amp;amp; Agriculture (MOFMRA)&lt;/strong&gt;, where I contributed to projects that launched innovative digital products, established strategic partnerships, and delivered measurable growth in customer engagement and revenue.&lt;/p&gt;
+&lt;p&gt;My expertise includes:&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>Achievements</title>
+      <link>http://localhost:1313/achievements/</link>
+      <pubDate>Sun, 11 May 2025 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/achievements/</guid>
+      
+      <description>&lt;p&gt;🏆 Personal Achievements 🏆&lt;/p&gt;
+&lt;p&gt;🎓 Academic Excellence&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Graduated with &lt;strong&gt;First Class Honors&lt;/strong&gt; (3.91 CGPA) in Business Management with Marketing from University of West England 🎯&lt;/li&gt;
+&lt;li&gt;Currently pursuing &lt;strong&gt;Masters in Business Analytics&lt;/strong&gt; at Sunway University, Malaysia 📚&lt;/li&gt;
+&lt;li&gt;Completed &lt;strong&gt;PAL leadership program&lt;/strong&gt; at Villa College 🚀&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;🏅 Professional Recognition&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Recipient of the prestigious &lt;strong&gt;Digital Hero Award&lt;/strong&gt; at Ooredoo Maldives for exceptional contributions to digital initiatives 💻&lt;/li&gt;
+&lt;li&gt;Won the &lt;strong&gt;Business Idea Award&lt;/strong&gt; for innovative solution development 💡&lt;/li&gt;
+&lt;li&gt;Successfully organized the &lt;strong&gt;Ooredoo Nation Gamers&amp;rsquo; Festival 2023&lt;/strong&gt;, bringing together gaming enthusiasts across the Maldives 🎮&lt;/li&gt;
+&lt;li&gt;Launched multiple &lt;strong&gt;successful partnerships&lt;/strong&gt; that significantly increased customer engagement KPIs 🤝&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;🚀 Project Successes&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>Telco Churn Prediction</title>
+      <link>http://localhost:1313/posts/telco-churn-prediction/</link>
+      <pubDate>Sun, 11 May 2025 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/telco-churn-prediction/</guid>
+      
+      <description>&lt;h1 id=&#34;how-i-built-a-customer-churn-prediction-app-for-telecom-companies&#34;&gt;&lt;strong&gt;How I Built a Customer Churn Prediction App for Telecom Companies&lt;/strong&gt;&lt;/h1&gt;
+&lt;p&gt;I recently completed a fascinating project for my AI and Decision Making course in my Master of Business Analytics program, and I wanted to share this journey with you all. Our team tackled a real-world business problem: customer churn in the telecommunications industry.&lt;/p&gt;
+&lt;h2 id=&#34;the-challenge-predicting-who&#34;&gt;&lt;strong&gt;The Challenge: Predicting Who&amp;rsquo;s About to Leave&lt;/strong&gt;&lt;/h2&gt;
+&lt;p&gt;Telecom companies face a constant battle to retain customers in today&amp;rsquo;s competitive market. Did you know that acquiring new customers costs significantly more than retaining existing ones? This makes identifying customers at risk of leaving (churning) incredibly valuable.&lt;/p&gt;</description>
+      
+    </item>
+    
+  </channel>
+</rss>

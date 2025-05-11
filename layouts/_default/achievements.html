@@ -1,0 +1,25 @@
+{{ define "main" }}
+<article class="achievements">
+  <header>
+    <h1>{{ .Title }}</h1>
+    <div class="content">
+      {{ .Content }}
+    </div>
+  </header>
+  
+  {{ with .Site.Data.achievements }}
+  <div class="achievements-list">
+    {{ range sort . "date" "desc" }}
+    <div class="achievement">
+      <h3 class="achievement__title">{{ .title }}</h3>
+      <div class="achievement__date">{{ .date }}</div>
+      <p class="achievement__description">{{ .description }}</p>
+      {{ if .link }}
+      <a href="{{ .link }}" class="achievement__link" target="_blank">Learn more →</a>
+      {{ end }}
+    </div>
+    {{ end }}
+  </div>
+  {{ end }}
+</article>
+{{ end }}

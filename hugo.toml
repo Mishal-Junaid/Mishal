@@ -1,0 +1,10 @@
+baseURL = "https://yoursite.com/"
+languageCode = "en-us"
+title = "Hassan Mish'al Junaid"
+theme = "hugo-blog-awesome"
+
+[params]
+  description = "Innovative Product Manager with proven expertise in digital product development, market strategy, and customer engagement."
+  
+  # Enable dark mode
+  enableDarkMode = true

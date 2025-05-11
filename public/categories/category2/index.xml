@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Category2 on Your Name</title>
+    <link>http://localhost:1313/categories/category2/</link>
+    <description>Recent content in Category2 on Your Name</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 15 Mar 2025 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/categories/category2/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Project Name</title>
+      <link>http://localhost:1313/projects/project-1/</link>
+      <pubDate>Sat, 15 Mar 2025 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/projects/project-1/</guid>
+      
+      <description>&lt;h2 id=&#34;project-overview&#34;&gt;Project Overview&lt;/h2&gt;
+&lt;p&gt;Brief description of the project, its goals, and your role in it.&lt;/p&gt;
+&lt;h2 id=&#34;challenge&#34;&gt;Challenge&lt;/h2&gt;
+&lt;p&gt;What problem was this project trying to solve? What constraints or requirements made it challenging?&lt;/p&gt;
+&lt;h2 id=&#34;solution&#34;&gt;Solution&lt;/h2&gt;
+&lt;p&gt;How did you approach the project? What strategies, technologies, or methodologies did you employ?&lt;/p&gt;
+&lt;h3 id=&#34;key-features&#34;&gt;Key Features&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Feature 1 and its benefits&lt;/li&gt;
+&lt;li&gt;Feature 2 and its benefits&lt;/li&gt;
+&lt;li&gt;Feature 3 and its benefits&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;technologies-used&#34;&gt;Technologies Used&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Technology 1&lt;/li&gt;
+&lt;li&gt;Technology 2&lt;/li&gt;
+&lt;li&gt;Technology 3&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;results&#34;&gt;Results&lt;/h2&gt;
+&lt;p&gt;What outcomes did this project achieve? Include metrics if possible (e.g., increased conversion by X%, reduced processing time by Y%).&lt;/p&gt;</description>
+      
+    </item>
+    
+  </channel>
+</rss>

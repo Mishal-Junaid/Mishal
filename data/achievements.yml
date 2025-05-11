@@ -1,0 +1,23 @@
+# List of achievements
+- title: "Certification Name"
+  date: "2025"
+  description: "Description of this certification and what it means in your professional context."
+  link: "https://link-to-verification.com"
+
+- title: "Award or Recognition"
+  date: "2024"
+  description: "Details about this award, who granted it, and why it was received."
+
+- title: "Completed Project X"
+  date: "2023"
+  description: "Successfully completed Project X which resulted in Y% improvement in Z metric."
+  link: "https://project-link.com"
+
+- title: "Publication in Industry Journal"
+  date: "2022"
+  description: "Published article titled 'Innovation in XYZ' in the Journal of Industry Standards."
+  link: "https://journal-link.com"
+
+- title: "Conference Speaker"
+  date: "2021"
+  description: "Invited speaker at the International Conference on Technology where I presented on 'Topic ABC'."

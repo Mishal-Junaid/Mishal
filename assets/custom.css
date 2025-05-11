@@ -1,0 +1,95 @@
+/* Custom styles that preserve dark mode but fix layout */
+.home-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh; /* Use most of the viewport height */
+  padding: 0 20px;
+}
+
+.home-profile {
+  text-align: center;
+  max-width: 600px;
+}
+
+.site-name {
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.site-description {
+  font-size: 18px;
+  color: var(--text-light);
+  margin: 0;
+}
+
+/* Position the navigation in the top right */
+.navbar {
+  position: absolute !important;
+  top: 20px;
+  right: 20px;
+}
+
+/* Remove unneeded elements from the homepage */
+.recent-posts, .featured-projects {
+  display: none;
+}
+
+/* Footer styles */
+.site-footer {
+    text-align: center;
+    padding: 20px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    font-size: 14px;
+    color: #6a737d;
+}
+
+body.dark .site-footer {
+    color: #8b949e;
+}
+
+.footer-social {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 10px;
+}
+
+.footer-social a {
+    color: #6a737d;
+}
+
+body.dark .footer-social a {
+    color: #8b949e;
+}
+
+.footer-text a {
+    color: #6a737d;
+    text-decoration: none;
+}
+
+body.dark .footer-text a {
+    color: #8b949e;
+}
+
+.footer-text a:hover {
+    text-decoration: underline;
+}
+
+.post-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #30363d; /* This adds lines between posts */
+}
+
+/* No border for the last item */
+.post-list li:last-child .post-item {
+    border-bottom: none;
+}
