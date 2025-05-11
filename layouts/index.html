@@ -288,20 +288,57 @@
     </footer>
     
     <script>
-    document.getElementById('theme-toggle').addEventListener('click', function() {
-        document.body.classList.toggle('dark');
-        localStorage.setItem('theme', document.body.classList.contains('dark') ? 'dark' : 'light');
-        document.getElementById('theme-toggle').textContent = document.body.classList.contains('dark') ? '🔆' : '🌙';
-    });
-    
-    // Initialize theme
-    if (localStorage.getItem('theme') === 'light') {
-        document.body.classList.remove('dark');
-        document.getElementById('theme-toggle').textContent = '🌙';
-    } else {
-        // Default to dark mode
-        document.body.classList.add('dark');
-        document.getElementById('theme-toggle').textContent = '🔆';
+    // More robust theme toggle function that works on all devices
+    function setupThemeToggle() {
+        const themeToggle = document.getElementById('theme-toggle');
+        if (!themeToggle) return;
+        
+        // Handle both click and touch events
+        themeToggle.addEventListener('click', toggleTheme);
+        themeToggle.addEventListener('touchend', function(e) {
+            e.preventDefault();
+            toggleTheme();
+        }, false);
+        
+        // Initialize theme based on localStorage or system preference
+        initializeTheme();
+        
+        function toggleTheme() {
+            if (document.body.classList.contains('dark')) {
+                document.body.classList.remove('dark');
+                localStorage.setItem('theme', 'light');
+                themeToggle.textContent = '🌙';
+            } else {
+                document.body.classList.add('dark');
+                localStorage.setItem('theme', 'dark');
+                themeToggle.textContent = '🔆';
+            }
+        }
+        
+        function initializeTheme() {
+            const savedTheme = localStorage.getItem('theme');
+            const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+            
+            if (savedTheme === 'light') {
+                document.body.classList.remove('dark');
+                themeToggle.textContent = '🌙';
+            } else if (savedTheme === 'dark' || prefersDark) {
+                document.body.classList.add('dark');
+                themeToggle.textContent = '🔆';
+            } else {
+                // Default to dark mode as your design shows
+                document.body.classList.add('dark');
+                themeToggle.textContent = '🔆';
+            }
+        }
+    }
+
+    // Run setup on page load
+    document.addEventListener('DOMContentLoaded', setupThemeToggle);
+
+    // Additional safeguard for mobile devices
+    if (document.readyState === 'complete' || document.readyState === 'interactive') {
+        setTimeout(setupThemeToggle, 1);
     }
     </script>
 </body>

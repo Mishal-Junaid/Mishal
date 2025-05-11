@@ -93,3 +93,63 @@ body.dark .footer-text a {
 .post-list li:last-child .post-item {
     border-bottom: none;
 }
+
+/* Improved theme toggle button for mobile */
+#theme-toggle {
+    background: none;
+    border: none;
+    color: inherit;
+    cursor: pointer;
+    font-size: 20px; /* Slightly larger for mobile */
+    padding: 8px;    /* Larger touch target */
+    margin: -8px;    /* Offset padding to maintain layout */
+    border-radius: 50%;
+    transition: background-color 0.2s;
+}
+
+/* Add visual feedback on hover/active states */
+#theme-toggle:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+#theme-toggle:active {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Ensure mobile devices show active state */
+@media (max-width: 768px) {
+    #theme-toggle {
+        font-size: 22px; /* Even larger on small screens */
+        padding: 10px;   /* Larger touch target on mobile */
+        margin: -10px;
+    }
+    
+    .nav {
+        gap: 15px; /* Slightly reduce gap for small screens */
+    }
+}
+
+/* General mobile improvements */
+@media (max-width: 480px) {
+    .main-container {
+        padding-top: 70px; /* More space at top for mobile */
+    }
+    
+    .name {
+        font-size: 20px; /* Slightly smaller heading on mobile */
+    }
+    
+    .bio {
+        font-size: 15px; /* Slightly smaller text on mobile */
+    }
+    
+    /* Ensure post items stack properly */
+    .post-item {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .post-date {
+        margin-top: 3px;
+    }
+}
