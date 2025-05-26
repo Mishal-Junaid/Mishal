@@ -1,6 +1,6 @@
 ﻿---
 title: "The Augmented Future: AI as a Partner in Business Innovation"
-date: 2025-05-15
+date: 2025-05-23
 draft: false
 categories: ["Artificial Intelligence", "Business Strategy", "Future of Work"]
 ---
