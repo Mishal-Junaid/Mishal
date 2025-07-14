@@ -1,5 +1,5 @@
 ---
-title: "Predictive Modelling for Graduate Placement Success: A Comparative Analysis of Ensemble Methods, Feature Engineering, and Business Impact"
+title: "Predictive Modelling for Graduate Placement Success"
 date: 2025-07-14
 draft: false
 categories: ["Machine Learning", "Educational Data Mining", "Predictive Analytics", "Business Intelligence"]
